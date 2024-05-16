@@ -1,0 +1,214 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>java</title>
+        </head>
+        <body>
+          <h1>my love</h1> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin nibh nec efficitur eleifend.
+             Mauris eget aliquet ante, et mattis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+             <script>
+                console.log("my love");
+                console.log("my heart");
+                console.log("my yummy");
+                
+
+                // operators
+               // Arithmetic operatorss( + , - , / , * , %)
+                // Assignment operators
+              // Comparison operators
+             //   conditioal statements - if/else statement
+            if(20==201){
+                //  if the condition is true , print this
+                console.log(true)
+            }else{
+                // else if the condition is false , print this
+                console.log(false)
+            }
+            // - == equal to - only check to see if the value are the same
+            
+            // - === strict equal t0 - only check two things values and data types
+            // - != not equal to - checks whether its two operands are not equal
+            // - !== stict is not equal to -  checks if the two values being compared are not equal in either value or data type
+            // - >= great than or equal to - returns true if the left operand is greater than or equal to the right operand, and false otherwise
+            // - <= less than or equal to -  returns true if the left operand is less than or equal to the right operand, and false otherwise
+            // - >== stict greater than or equal to -
+            // - <== strict less than or equal to
+
+
+            // mini calculator
+            let Arithmetic_operator = "mod";  // 
+            // come up with variable of three numbers - num1, num2, num3
+            var num1 = 1
+            var num2 = 2
+            var num3 = 3
+            var num4 = 4
+            var num5 = 5
+            var num6 = 6
+            var num7 = 7
+            var num8 = 8
+            var num9 = 9
+            var num10 = 0
+
+
+            if(Arithmetic_operator === "add"){
+               let result = num1 + num2 + num3;
+               console.log(result)
+            }
+
+            if(Arithmetic_operator === "add"){
+              let result = num1 + num10 + num7
+              console.log(result)
+            }
+            if(Arithmetic_operator === "add"){
+              let result = num3 + num5 + num8
+              console.log(result)
+            }
+
+            if(Arithmetic_operator === "sub"){
+              let result = num2 - num10 - num4
+              console.log(result)
+            }
+            if(Arithmetic_operator === "sub"){
+              let result = num9 - num4 - num5
+              console.log(result)
+            }
+            if(Arithmetic_operator === "div"){
+              let result = num4 / num8 / num3
+              console.log(result)
+            }
+            if(Arithmetic_operator === "div"){
+              let result = num4/num6/num2
+              console.log(result)
+            }
+            if(Arithmetic_operator === "mod"){
+              let result = num4 % num4 % num7
+              console.log(result)
+            }
+            if (Arithmetic_operator === "mul") {
+              let result = num4 * num6 * num8
+              console.log(result)
+            }
+
+            let arith_result = 0;
+
+            switch (Arithmetic_operator) {
+              case "add":
+                 arith_result = num5 + num6 + num8
+                 break;
+                 case "sub":
+                 arith_result = num5 - num6 - num8
+                break;
+              default:
+              arith_result = num5 * num6 * num8
+                break;
+            }
+             console.log(arith_result);
+
+
+
+
+
+            // logical operators
+            // AND - &&
+            // OR  - ||
+
+          //  let   username = "Dammy"
+          //  let   email = "dhawau"
+          //  let   password = ""
+
+            // if(username !== "" ){
+              // user data will be added to database
+              // console.log("Hello, user with the name " + email + " thanks you for subscribing");
+            // }
+            // if(email !== ""){
+              // user data will be added to database
+              // console.log("Hello, user with the email" + name + " thanks for coming")
+            // }
+            // if(password !== ""){
+              // user data will be added to database
+              // console.log("hurray!!!")
+            // }else{
+              // if passsword is empty , print this
+            //   / console.log(prompt("input your password"))
+            // }
+
+
+            /*
+            let result = "";
+
+
+            function signup(parameter_username, parameter_email, parameter_password){
+              // local/block scope
+              if(parameter_username !== ""){
+              // user data will be added to database 
+                console.log(result)
+            }else  {
+              // else if it is empty , print this
+              console.log("empty")
+              return;
+            }
+            if(parameter_email !== ""){
+              // if this is true ,print this
+              console.log("input your email")
+            }else{
+              // if this is false , print this
+              console.log(result)
+            }
+            if(parameter_password !== ""){
+              // if this is true , print this
+              console.log("input your password")
+            }else{
+              // esle if this is false , print this
+              console.log(result)
+            }
+              result = parameter_username + " " + parameter_email + " " + parameter_password;
+              console.log(result)
+            }
+
+            signup("dammy", "ghh")
+
+            function signup2(parameter_username, parameter_email, parameter_password){
+              // local/block scope
+              if(parameter_username === "" || parameter_email === "" || parameter_password){
+                console.log('meet !!')
+              }else{
+                result = parameter_username + " " + parameter_email + " " + parameter_password
+                  console.log(result)
+              }
+              
+            }
+
+            signup2( "digg", " deff", "")
+            **/
+            
+            
+            // create a post
+            // data - id, title, creator, description, created_at
+            // validation - if/esle
+
+
+            let result = "";
+            function post(parameter_id, parameter_title, parameter_description, parameter_created_at){
+             if (
+              parameter_id === undefined  || 
+              parameter_title === undefined || 
+              parameter_description === undefined || 
+              parameter_created_at === undefined
+              ) {
+              console.log("description field and create_at field is empty")
+             }else{
+              result = parameter_id + " " + parameter_title + " " + parameter_description + " " + parameter_created_at
+              console.log(result);
+             }
+             
+            }
+             post(345 , "sfsf")
+
+            
+             </script>
+              
+        </body>
